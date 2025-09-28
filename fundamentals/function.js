@@ -65,6 +65,15 @@ if (5 == '5') {
 }
 if (5 === '5') {
   console.log("true");
-}else{
+} else {
   console.log("false");
 }
+
+//anonymous function
+let birthYear;
+let calAge = function (birthYear) {
+  return 2050 - birthYear;
+};
+
+console.log(calAge(2000));
+
