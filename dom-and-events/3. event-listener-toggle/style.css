@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
+/* Main heading */
+#main-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Container */
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
+}
+
+/* Shared box style */
+.boxes {
+  background: #1e2a33;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.boxes:hover {
+  transform: translateY(-3px);
+}
+
+/* Reveal button */
+.reveal-btn {
+  border: 2px solid #4a90e2;
+  background: transparent;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 15px 30px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.reveal-btn:hover {
+  background: #4a90e2;
+  color: #fff;
+}
+
+/* Hidden content */
+.hidden-content {
+  width: 400px;
+  line-height: 1.5;
+  display: none;
+}
+
+.hidden-content.reveal-btn {
+  display: block;
+}
